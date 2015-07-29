@@ -173,6 +173,22 @@ span {
   text-align: center;
 }
 
+#role {
+  font-weight: bold;
+}
+
+.work-employer {
+  color: #1199c3;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+  padding: 0px;
+}
+
+.email-link {
+  margin-top: 0px;
+}
+
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {

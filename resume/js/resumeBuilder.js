@@ -85,40 +85,40 @@ var education = {
 	],
 	"onlineCourses": [
 		{
-			"title": "Intro to HTML and CSS",
+			"title": "Intro to jQuery",
 			"school": "Udacity",
 			"dates": 2015,
-			"url": "https://www.udacity.com/course/viewer#!/c-ud304-nd"
+			"url": "https://www.udacity.com/course/viewer#!/c-ud245-nd"
 		},
-		{
+				{
+			"title": "JavaScript Basics",
+			"school": "Udacity",
+			"dates": 2015,
+			"url": "https://www.udacity.com/course/viewer#!/c-ud804-nd"
+		},
+				{
+			"title": "How to Use Git and GitHub",
+			"school": "Udacity",
+			"dates": 2015,
+			"url": "https://www.udacity.com/course/viewer#!/c-ud775-nd/"
+		},
+				{
+			"title": "Responsive Images",
+			"school": "Udacity",
+			"dates": 2015,
+			"url": "https://www.udacity.com/course/viewer#!/c-ud882-nd"
+		},
+				{
 			"title": "Responsive Web Design Fundamentals",
 			"school": "Udacity",
 			"dates": 2015,
 			"url": "https://www.udacity.com/course/viewer#!/c-ud893-nd"
 		},
 		{
-			"title": "Responsive Images",
+			"title": "Intro to HTML and CSS",
 			"school": "Udacity",
 			"dates": 2015,
-			"url": "https://www.udacity.com/course/viewer#!/c-ud882-nd"
-		},
-		{
-			"title": "How to Use Git and GitHub",
-			"school": "Udacity",
-			"dates": 2015,
-			"url": "https://www.udacity.com/course/viewer#!/c-ud775-nd/"
-		},
-		{
-			"title": "JavaScript Basics",
-			"school": "Udacity",
-			"dates": 2015,
-			"url": "https://www.udacity.com/course/viewer#!/c-ud804-nd"
-		},
-		{
-			"title": "Intro to jQuery",
-			"school": "Udacity",
-			"dates": 2015,
-			"url": "https://www.udacity.com/course/viewer#!/c-ud245-nd"
+			"url": "https://www.udacity.com/course/viewer#!/c-ud304-nd"
 		}
 	]
 }
@@ -129,7 +129,8 @@ var projects = {
 			"title": "MotionArtist.tv",
 			"dates": "2014",
 			"description": "An interactive social site for sharing animation created with MotionArtist software.",
-			"images": ["images/motionartisttv.jpg"]
+			"images": ["images/motionartisttv.jpg"],
+			"url": "http://www.motionartist.tv"
 		}
 	]
 }
@@ -138,7 +139,7 @@ bio.display = function() {
 	var formattedName = HTMLheaderName.replace("%data%", bio.name);
 	var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-	var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+	var formattedEmail = HTMLemail.replace(/%data%/g, bio.contacts.email);
 	var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github);
 	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 	var formattedImage = HTMLbioPic.replace("%data%", bio.bioPic);
@@ -157,8 +158,8 @@ bio.display = function() {
 	$("#footerContacts").append(formattedGitHub);
 	$("#footerContacts").append(formattedLocation);
 
-	$("#header").append(formattedImage);
-	$("#header").append(formattedWelcomeMessage);
+	//$("#header").append(formattedImage);
+	//$("#header").append(formattedWelcomeMessage);
 
 	if (bio.skills.length > 0) {
 		$("#header").append(HTMLskillsStart);
@@ -225,6 +226,9 @@ projects.display = function() {
 		$("#projects").append(HTMLprojectStart);
 
 		var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[p].title);
+		if (projects.projects[p].url) {
+			formattedProjectTitle = formattedProjectTitle.replace("%url%", projects.projects[p].url);
+		}
 		var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[p].dates);
 		var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[p].description);
 
