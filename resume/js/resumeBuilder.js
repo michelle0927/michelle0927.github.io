@@ -6,6 +6,7 @@ var bio = {
 		"mobile": "831-465-4820",
 		"email": "michellelbergero@hotmail.com",
 		"github": "michelle0927",
+		"linkedin": "https://www.linkedin.com/pub/michelle-bergeron/52/796/624",
 		"location": "Broomfield, CO"
 	},
 	"skills": ["HTML", "CSS", "JavaScript", "JQuery", "Perl", "PHP", "MySQL"],
@@ -142,8 +143,9 @@ bio.display = function() {
 	var formattedEmail = HTMLemail.replace(/%data%/g, bio.contacts.email);
 	var formattedGitHub = HTMLgithub.replace(/%data%/g, bio.contacts.github);
 	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
-	var formattedImage = HTMLbioPic.replace("%data%", bio.bioPic);
-	var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+	var formattedLinkedIn = HTMLlinkedin.replace(/%data%/g, bio.contacts.linkedin);
+	//var formattedImage = HTMLbioPic.replace("%data%", bio.bioPic);
+	//var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 
 	$("#header").prepend(formattedRole);
 	$("#header").prepend(formattedName);
@@ -162,13 +164,15 @@ bio.display = function() {
 	//$("#header").append(formattedWelcomeMessage);
 
 	if (bio.skills.length > 0) {
-		$("#header").append(HTMLskillsStart);
+		$("#skills-div").append(HTMLskillsStart);
 
 		for (var skill = 0; skill < bio.skills.length; skill++) {
 			var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
 			$("#skills").append(formattedSkill);
 		}
 	}
+
+	$("#linkedInContact").append(formattedLinkedIn);
 }
 
 work.display = function() {

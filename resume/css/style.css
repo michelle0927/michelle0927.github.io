@@ -134,6 +134,7 @@ a {
 /* TODO: Replace with image later */
 #header {
   background-color: #484848;
+  padding-bottom: 10px;
 }
 
 .flex-box {
@@ -185,8 +186,12 @@ span {
   padding: 0px;
 }
 
-.email-link, .github-link {
+.email-link, .github-link, .linkedin-link {
   margin-top: 0px;
+}
+
+#skills-div {
+  margin-bottom:25px;
 }
 
 /* Media queries to handle various device widths */
@@ -211,6 +216,10 @@ span {
     width: 150px;
   }
   .welcome-message {
+    display: none;
+  }
+
+  #linkedInContact {
     display: none;
   }
 }
