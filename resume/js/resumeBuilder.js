@@ -265,4 +265,4 @@ work.display();
 education.display();
 projects.display();
 
-$("#map-div").append(googleMap);
+//$("#map-div").append(googleMap);
