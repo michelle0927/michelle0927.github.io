@@ -5,7 +5,6 @@ var bio = {
 	"contacts": {
 		"mobile": "831-465-4820",
 		"email": "michellelbergero@hotmail.com",
-		"github": "michelle0927",
 		"linkedin": "https://www.linkedin.com/in/michelle0927",
 		"location": "Broomfield, CO"
 	},
