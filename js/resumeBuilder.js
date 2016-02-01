@@ -177,7 +177,7 @@ var projects = {
 
 bio.display = function() {
 	var formattedName = HTMLheaderName.replace("%data%", bio.name);
-	var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+	//var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 	var formattedEmail = HTMLemail.replace(/%data%/g, bio.contacts.email);
 	var formattedGitHub = HTMLgithub.replace(/%data%/g, bio.contacts.github);
