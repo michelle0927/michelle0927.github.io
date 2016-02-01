@@ -1,6 +1,6 @@
 var bio = {
 	"name": "Michelle Bergeron",
-	"role": "Web Developer",
+	"role": "",
 	"welcomeMessage": "<br>Hello. My name is Michelle and I live in Broomfield, CO. I am looking for full-time employment as a Web Developer.<br><br>",
 	"contacts": {
 		"mobile": "831-465-4820",
