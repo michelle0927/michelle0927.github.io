@@ -202,14 +202,14 @@ bio.display = function() {
 	//$("#header").append(formattedImage);
 	//$("#header").append(formattedWelcomeMessage);
 
-	if (bio.skills.length > 0) {
-		$("#skills-div").append(HTMLskillsStart);
+	//if (bio.skills.length > 0) {
+	//	$("#skills-div").append(HTMLskillsStart);
 
-		for (var skill = 0; skill < bio.skills.length; skill++) {
-			var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
-			$("#skills").append(formattedSkill);
-		}
-	}
+	//	for (var skill = 0; skill < bio.skills.length; skill++) {
+	//		var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
+	//		$("#skills").append(formattedSkill);
+	//	}
+	//}
 
 	$("#linkedInContact").append(formattedLinkedIn);
 }
