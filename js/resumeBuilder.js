@@ -179,7 +179,7 @@ bio.display = function() {
 	var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 	var formattedEmail = HTMLemail.replace(/%data%/g, bio.contacts.email);
-	var formattedGitHub = HTMLgithub.replace(/%data%/g, bio.contacts.github);
+	//var formattedGitHub = HTMLgithub.replace(/%data%/g, bio.contacts.github);
 	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 	var formattedLinkedIn = HTMLlinkedin.replace(/%data%/g, bio.contacts.linkedin);
 	//var formattedImage = HTMLbioPic.replace("%data%", bio.bioPic);
@@ -190,7 +190,7 @@ bio.display = function() {
 
 	$("#topContacts").append(formattedMobile);
 	$("#topContacts").append(formattedEmail);
-	$("#topContacts").append(formattedGitHub);
+	//$("#topContacts").append(formattedGitHub);
 	$("#topContacts").append(formattedLocation);
 
 	//$("#footerContacts").append(formattedMobile);
