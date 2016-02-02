@@ -15,18 +15,18 @@ var bio = {
 var work = {
 	"jobs": [
 		{
-			"employer": "Kindman",
+			"employer": "MGI, Inc.",
 			"title": "Administrative Assistant",
 			"dates": "08/2015 - Present",
 			"location": "Denver, CO",
-			"description": "Process paperwork and accounting information for retail distributor."
+			"description": "Use Adilas and METRC for maintaining employee files, bookkeeping, inventory control, and other administrative tasks as needed."
 		},
 		{
 			"employer": "Manpower Group",
 			"title": "Software Receive Call Agent",
 			"dates": "04/2015 - 8/2015",
 			"location": "Boulder, CO",
-			"description": "Analyzed information provided by customers, route them to proper technical group."
+			"description": "Analyzed information provided by customers and routed them to proper technical group."
 		},
 		{
 			"employer": "SmithMicro Software",
@@ -40,7 +40,7 @@ var work = {
 			"title": "Impress Associate",
 			"dates": "06/2012 - 03/2013",
 			"location": "Santa Cruz, CA",
-			"description": "Assisted customers and completed projects within the copy center of an office supply retail store."
+			"description": "Assisted customers and completed projects within copy center of office supply retail store."
 		},
 		{
 			"employer": "ClickAway Corporation",
@@ -52,16 +52,9 @@ var work = {
 		{
 			"employer": "California Hydroponics",
 			"title": "Owner/Bookkeeper",
-			"dates": "02/2006 - 10/2012",
+			"dates": "02/2006 - 10/2010",
 			"location": "Santa Cruz, CA",
 			"description": "Managed financial records using Quickbooks and Quickbooks POS. Responsible for payroll, accounts receivable and accounts payable. Greeted customers, helped customers find products, and used cash register to complete transactions."
-		},
-		{
-			"employer": "Eight3OneDesign",
-			"title": "Web Developer",
-			"dates": "01/2008 - 12/2010",
-			"location": "Santa Cruz, CA",
-			"description": "Developed and maintained various websites as needed. Completed work within specified deadlines."
 		},
 		{
 			"employer": "Web Network Billing",
@@ -88,14 +81,6 @@ var education = {
 			"majors": ["Computer Information Systems"],
 			"dates": 2001,
 			"location": "Houston, TX",
-		},
-		{
-			"schoolName": "Udacity",
-			"degree": "Nanodegree (in progress)",
-			"majors": ["Front-End Web Development"],
-			"dates": 2015,
-			"type": "Online",
-			"location": "Broomfield, CO" // added in so that the Google Map will work
 		}
 	],
 	"onlineCourses": [
