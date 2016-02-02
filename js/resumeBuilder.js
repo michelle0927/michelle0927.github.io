@@ -282,7 +282,7 @@ projects.display = function() {
 }
 
 bio.display();
-work.display();
+//work.display();
 education.display();
 //projects.display();
 
