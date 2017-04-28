@@ -6,7 +6,7 @@ var bio = {
 		"mobile": "831-465-4820",
 		"email": "michelle.bergeron@gmail.com",
 		"linkedin": "https://www.linkedin.com/in/michelle0927",
-		"location": "Broomfield, CO"
+		"location": "Fresno, CA"
 	},
 	"skills": ["HTML", "CSS", "JavaScript", "JQuery", "Perl", "PHP", "MySQL"],
 	"bioPic": "images/me.jpg"
