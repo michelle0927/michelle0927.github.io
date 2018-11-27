@@ -3,7 +3,7 @@ var HTMLheaderName = '<h1 id="name">%data%</h1>';
 var HTMLheaderRole = '<hr/>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
+var HTMLmobile = '';
 var HTMLemail = '<li class="flex-item"><a class="email-link" href="mailto:%data%"><span class="orange-text">email</span><span class="white-text">%data%</span></a></li>';
 var HTMLtwitter = '<li class="flex-item"><span class="orange-text">twitter</span><span class="white-text">%data%</span></li>';
 var HTMLgithub = '<li class="flex-item"><a class="github-link" href="https://github.com/%data%" target="_blank"><span class="orange-text">github</span><span class="white-text">%data%</span></a></li>';
