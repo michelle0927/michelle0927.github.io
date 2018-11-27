@@ -3,7 +3,6 @@ var bio = {
 	"role": "",
 	"welcomeMessage": "<br>Hello. My name is Michelle and I live in Broomfield, CO. I am looking for full-time employment as a Web Developer.<br><br>",
 	"contacts": {
-		"mobile": "831-465-4820",
 		"email": "michelle.bergeron@gmail.com",
 		"linkedin": "https://www.linkedin.com/in/michelle0927",
 		"location": "Fresno, CA"
