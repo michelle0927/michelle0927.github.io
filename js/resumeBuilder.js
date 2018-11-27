@@ -173,7 +173,7 @@ bio.display = function() {
 	$("#header").prepend(formattedName);
 
 	$("#topContacts").append(formattedMobile);
-	$("#topContacts").append(formattedEmail);
+	//$("#topContacts").append(formattedEmail);
 	//$("#topContacts").append(formattedGitHub);
 	$("#topContacts").append(formattedLocation);
 
